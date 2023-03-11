@@ -1,57 +1,60 @@
-body{
-    background-color: black;
-    color: white;
-    font-size: 100%;
-    text-align: center;
+
+body {
+  background-color: black;
+  color: white;
+  font-size: 100%;
+  text-align: center;
 }
 
 .container{
     margin: 4rem 9rem 0rem 9rem;
 }
 
-#num1{
-    height: 1.5rem;
-    width: 9rem;
-    font-size: 2rem;
+label {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
-#num2{
-    height: 1.5rem;
-    width: 9rem;
-    font-size: 2rem;
+input[type="number"],
+select {
+  /* width: 100%; */
+  height: 2rem;
+  font-size: 1.5rem;
+  /* border-radius: .5rem; */
+  border: none;
+  padding: 0.5rem;
 }
 
-#btn{
-    height: 4rem;
+button {
+    height: 3rem;
     width: 9rem;
     background-color: green;  
     color:white;
     border-radius: .5rem;
     font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
 }
 
-#operator{
-    height: 2rem;
-    width: 10rem;
-    font-size: 1.5rem;
+#result {
+  margin-top: 1rem;
+  font-size: 2rem;
 }
-
-#result{
-    text-align: center;
-    font-size: 2rem;
-}
-
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    /* Adjust the container margins for smaller screens */
     .container {
-        margin: 4rem 2rem 0rem 2rem;
+      margin: 4rem 2rem 0rem 2rem;
     }
-    
-    #num1,
-    #num2,
-    #btn,
-    #operator {
-        width: 100%;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+  
+    /* Decrease the font size for labels on smaller screens */
+    label {
+      font-size: 1.5rem;
     }
-}
+  
+    /* Increase the button height for smaller screens */
+    button {
+      height: 4rem;
+    }
+  }
