@@ -1,16 +1,12 @@
 body{
     background-color: black;
     color: white;
-    font-size:100%;
+    font-size: 100%;
     text-align: center;
-
 }
 
 .container{
     margin: 4rem 9rem 0rem 9rem;
-    /* position: relative; */
-    /* left: 20rem; */
-    
 }
 
 #num1{
@@ -33,13 +29,29 @@ body{
     border-radius: .5rem;
     font-size: 1.5rem;
 }
+
 #operator{
-height: 2rem;
-width: 10rem;
-font-size: 1.5rem;
+    height: 2rem;
+    width: 10rem;
+    font-size: 1.5rem;
 }
 
 #result{
     text-align: center;
     font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 4rem 2rem 0rem 2rem;
+    }
+    
+    #num1,
+    #num2,
+    #btn,
+    #operator {
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
 }
