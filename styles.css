@@ -19,10 +19,10 @@ label {
 
 input[type="number"],
 select {
-  /* width: 100%; */
+ 
   height: 2rem;
   font-size: 1.5rem;
-  /* border-radius: .5rem; */
+  
   border: none;
   padding: 0.5rem;
 }
@@ -43,18 +43,23 @@ button {
   font-size: 2rem;
 }
 @media only screen and (max-width: 767px) {
-    /* Adjust the container margins for smaller screens */
+   
     .container {
       margin: 4rem 2rem 0rem 2rem;
     }
   
-    /* Decrease the font size for labels on smaller screens */
-    label {
-      font-size: 1.5rem;
-    }
   
-    /* Increase the button height for smaller screens */
-    button {
-      height: 4rem;
+
+    label,
+    input[type="number"],
+select
+    button
+     {
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
+
   }
+
+
